@@ -10,23 +10,65 @@ namespace AdventureTextGame
         public static void gameStart()
         {
             Console.Title = "A Brave Hero's Adventure";
+            // create a creative title screen
 
             WriteLine("A Brave Hero's Adventure");
             WriteLine("----------------------------------------------");
-            WriteLine("Are you the hero we've been waiting for, with courage enough to embark on this journey?");
+            WriteLine("Here in the Land of Heros, capitlization and spelling is very important. \nOtherwise, it might be difficult to naviagte the journey.");
+            WriteLine("----------------------------------------------");
+            WriteLine("Finally, the hero we've been waiting for, with courage enough to embark on this great journey. Huzzah! \n(Press any key to continue)");
             ReadKey();
-            Console.Title = "A Journey Begins...";
-            // changes title of console window; will be useful as player progresses through levels/chapters
+            
+            //string plyrInput = ReadKey().ToString();
+
+            //if (plyrInput == "Y" || plyrInput == "y")
+            //{
+            //    WriteLine("\nHuzzah!");
+            //}
+            //else if (plyrInput == "N" || plyrInput == "n")
+            //{
+            //    WriteLine("\nOh...pardon me traveler.");
+            //}
+            //else
+            //{
+            //    WriteLine("\nI don't understand, but I'll allow my optimism to interpret that as a hearty yes! Huzzah!");
+            //}
+            //WriteLine("----------------------------------------------");
+
+
         }
 
         public static void setCharName()
         {
+            Console.Title = "A Journey Begins...";
+            // changes title of console window; will be useful as player progresses through levels/chapters
+
             WriteLine("\nWhat is your name, so we may tell future tales of your adventure?");
             charName = ReadLine();
             WriteLine("\nWelcome! And a hearty cheers to " + charName + ", our new hero!");
-            Console.Clear();
+            WriteLine("----------------------------------------------\n");
 
             //Consider using Console.Clear() to clear the screen. This helps separate parts of a text-heavy game (such as between levels, chapters, achievements, or when a player clicks enter at a title screen).
+        }
+
+        public static void firstStoryChoice()
+        {
+            string plyrInput;
+            WriteLine(charName + ", are you a warrior of the sword? Or do you prefer to settle differences with your fists?\nType \"A\" to pick your sword from our blacksmith, or \"B\" to begin wrapping your hands and knuckles to protect yourself from your powerful blows.");
+            plyrInput = ReadLine().ToUpper();
+
+            if (plyrInput == "A")
+            {
+                WriteLine("\n'You hear bellowing laughter from whom you assume is the blacksmith.\' \"HAHAHA, A wise choice indeed! Surely no foe will be able to oppose you with this by your side.\" You are handed this sword, and it seems to instantly feel like a natural extension of your body. Was this created with you in mind?");
+            }
+            else if (plyrInput == "B")
+            {
+                WriteLine("You punch one hand into the other and let out a confident laugh. \"Thank you for the offer of steel, but I find my own body to be the best weapon.\" You can't help but notice the awe in the eyes of those who hear your confidence.");
+            }
+            else
+            {
+                WriteLine("I'm sorry " + charName + ", but we have no the weapons available to offer other than our finest steel. (Please only type \"A\" or \"B\"");
+            }
         }
     }
 }

@@ -11,10 +11,15 @@ namespace AdventureTextGame
         {
             TitleScreen.gameStart();
             TitleScreen.setCharName();
+            TitleScreen.firstStoryChoice();
             
         }
     }
 }
+
+
+
+// snippets of game code ideas: 
 
 ////original Dialog method
 //static void Dialog(string message)
