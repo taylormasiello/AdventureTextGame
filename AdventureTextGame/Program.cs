@@ -9,9 +9,17 @@ namespace AdventureTextGame
     {
         static void Main(string[] args)
         {
+            //Title Screen
             TitleScreen.gameStart();
             TitleScreen.setCharName();
             TitleScreen.firstStoryChoice();
+            TitleScreen.lvlComplete();
+
+            //Main Story
+            Chapter1.choice();
+
+            //End Screen
+            EndScreen.endGame();
             
         }
     }

@@ -61,14 +61,15 @@ namespace AdventureTextGame
             {
                 WriteLine("\n'You hear bellowing laughter from whom you assume is the blacksmith.\' \"HAHAHA, A wise choice indeed! Surely no foe will be able to oppose you with this by your side.\" You are handed this sword, and it seems to instantly feel like a natural extension of your body. Was this created with you in mind?");
             }
-            else if (plyrInput == "B")
+            else //if the choice B (or anything else, think of as catch also, will trigger this choice)
             {
                 WriteLine("You punch one hand into the other and let out a confident laugh. \"Thank you for the offer of steel, but I find my own body to be the best weapon.\" You can't help but notice the awe in the eyes of those who hear your confidence.");
             }
-            else
-            {
-                WriteLine("I'm sorry " + charName + ", but we have no the weapons available to offer other than our finest steel. (Please only type \"A\" or \"B\"");
-            }
+        }
+
+        public static void lvlComplete()
+        {
+            WriteLine("\nYou look around and notice the optimism in the eyes of the people of this land. With a fire in your belly to finally being this next adventure, you leave this waystation, and start your joureny.");
         }
     }
 }
