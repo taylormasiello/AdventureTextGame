@@ -6,17 +6,17 @@ using static AdventureTextGame.TitleScreen;
 namespace AdventureTextGame
 {
     class Chapter2
-    {
-		int Scenarios = 1;
+    {		
+		public int scenes = 1;
 
 		static string[] sceneOne = {
-			"Night begins to fall and you begin to shiver. You remember your cold-weather endurance training and press on.\nFatigue begins to hit you, and you wonder if you should continue, or rest for the night.\nYou look around, and see a cave in the distance. Who knows what could be lurking inside?\nHowever, it could provide the best shelter. Should you make camp in the cave? Or try your best making camp, more out in the open, but closer to the main road?\n(Please press A to investigate the cave or press B to make camp near the main road.)",
+			"Night begins to fall and you begin to shiver. You remember your cold-weather endurance training and press on.\nFatigue begins to hit you, and you wonder if you should continue, or rest for the night.\nYou look around, and see a cave in the distance. Who knows what could be lurking inside?\nHowever, it could provide the best shelter. Should you make camp in the cave? Or try your best making camp, more out in the open, but closer to the main road?\n(Please press A to investigate the cave or press B to make camp near the main road.)\n----------------------------------------------\n",
 			"Ha! You almost laugh at your initial nervousness. You're an adventurer! No matter what lurks inside that cave,\nyou're brave and will be triumphant! You cautiously approach the cave, and as you do, you notice a shadow\nand prepare yourself for battle. As you draw closer, you realize, it's nothing more than a large mouse.",
 			"The night air is cold, and your body is tired. No need to go all the way to a distant cave, only\nto be ambushed by some large beastie inside. Best to make camp close to the main road.",
-			"You begin to make camp, and light a fire. Suddenly, you hear the rumbling of your stomach.\nWhen was the last time you ate?",
+			"You begin to make camp, and light a fire. Suddenly, you hear the rumbling of your stomach.\nWhen was the last time you ate?\n----------------------------------------------\n",
 			"Licking your lips, you realize you'll have to vanquish this rodent, or fear you'll starve!\nAfter a bit of a chase, you catch and slay the large mouse. The meat smells good roasting on the fire.\nYou save some for a snack later, and rest well on a fairly full stomach.",
 			"You look around, but the area is bare. The field has nothing more than random insects. It's not the first\nnight you've gone to sleep without a meal, but you certainly wish you'd have grabbed some rations\nbefore heading out on your journey.",
-			"You go to sleep, prepared to wake up well rested, ready to take on the next leg of your journey."
+			"You go to sleep, prepared to wake up well rested, ready to take on the next leg of your journey.\n----------------------------------------------\n"
 		};
 		//static string[] sceneTwo = {
 		//	"Description of story part two ... and the choice A or B",
@@ -40,7 +40,8 @@ namespace AdventureTextGame
 
 		public static void choice()
         {
-			
+			Console.Title = "Chapter 2";
+
 			for (int scenario = 1; scenario <= 1; scenario++)
 			{
 				string input = "";

@@ -64,10 +64,11 @@ namespace AdventureTextGame
             if (plyrInput == "A")
             {
                 WriteLine("\n'You hear bellowing laughter from whom you assume is the blacksmith.\' \"HAHAHA, A wise choice indeed! Surely no foe will be able to oppose you with this by your side.\" You are handed this sword, and it seems to instantly feel like a natural extension of your body. Was this created with you in mind?");
-                
+                WriteLine("----------------------------------------------\n");
+
                 //creates new instance of Item class
                 Item sword = new Item();
-                sword.name = "A Hero's Sword";
+                sword.name = "Hero's sword";
                 sword.description = "It feels as though this weapon was created with you in mind. When you hold\nthis sword, it's as if you've been weilding it all your life.";
                 //adds new Item object to running Inventory List
                 Inventory.Add(sword.name);
@@ -75,12 +76,23 @@ namespace AdventureTextGame
             else //if the choice B (or anything else, think of as catch also, will trigger this choice)
             {
                 WriteLine("You punch one hand into the other and let out a confident laugh. \"Thank you for the offer of steel, but I find my own body to be the best weapon.\" You can't help but notice the awe in the eyes of those who hear your confidence.");
+                WriteLine("----------------------------------------------\n");
             }
+        }
+
+        public static void firstRandItem()
+        {
+            //creates new instance of RandItem class
+            RandItem firstRandItem = new RandItem();
+            WriteLine("Before you head out Hero, please, take this!\nYou are given a box with a mysterious item inside. You open the box and find a " + firstRandItem.name + "! (" + firstRandItem.description + ")");
+            //adds new RandItem object to running Inventory List
+            Inventory.Add(firstRandItem.name);
         }
 
         public static void lvlComplete()
         {
             WriteLine("\nYou look around and notice the optimism in the eyes of the people of this land. With a fire in your belly to finally being this next adventure, you leave this waystation, and start your joureny.");
+            WriteLine("----------------------------------------------\n");
         }
     }
 }

@@ -8,13 +8,17 @@ namespace AdventureTextGame
     {
         public static void endGame()
         {
-            WriteLine("Huzzah " + charName + ", you became the hero of the land!");
+            Console.Title = "A Hero's Journey Comes to an End...";
+
+            WriteLine("Huzzah " + charName + ", you became the hero of the land!\n----------------------------------------------\n");
             WriteLine(charName + ", it's been a long and arduous journey, and you found some items along your way:");
 
             foreach (string item in Inventory)
             {
                 WriteLine(item);
             }
+
+            WriteLine("\n----------------------------------------------\n");
             //writes out List of items/interactables the player found throughout game
 
             //see if a previously assigned objective given to the player was completed or not (for example, finding a diamond):
