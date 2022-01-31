@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace AdventureTextGame
 {
-    class Item
+    public class Item
     {
+        public string name;
+        public string description;
+
+        //constructor
+        public Item()
+        {
+            name = "rubbish";
+            description = "a pile of dirt and trash, why are you keeping this?";
+        }
     }
 }

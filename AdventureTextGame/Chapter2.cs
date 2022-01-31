@@ -14,7 +14,7 @@ namespace AdventureTextGame
 			"Ha! You almost laugh at your initial nervousness. You're an adventurer! No matter what lurks inside that cave,\nyou're brave and will be triumphant! You cautiously approach the cave, and as you do, you notice a shadow\nand prepare yourself for battle. As you draw closer, you realize, it's nothing more than a large mouse.",
 			"The night air is cold, and your body is tired. No need to go all the way to a distant cave, only\nto be ambushed by some large beastie inside. Best to make camp close to the main road.",
 			"You begin to make camp, and light a fire. Suddenly, you hear the rumbling of your stomach.\nWhen was the last time you ate?",
-			"Licking your lips, you realize you'll have to vanquish this rodent, or fear you'll starve!\nAfter a bit of a chase, you catch and slay the large mouse. The meat smells good roasting on the fire.\nYou'll feel more refreshed and rested after a good night's sleep after this meal.",
+			"Licking your lips, you realize you'll have to vanquish this rodent, or fear you'll starve!\nAfter a bit of a chase, you catch and slay the large mouse. The meat smells good roasting on the fire.\nYou save some for a snack later, and rest well on a fairly full stomach.",
 			"You look around, but the area is bare. The field has nothing more than random insects. It's not the first\nnight you've gone to sleep without a meal, but you certainly wish you'd have grabbed some rations\nbefore heading out on your journey.",
 			"You go to sleep, prepared to wake up well rested, ready to take on the next leg of your journey."
 		};

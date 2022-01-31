@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using static System.Console;
+using static AdventureTextGame.Item;
 
 namespace AdventureTextGame
 {
@@ -63,6 +64,13 @@ namespace AdventureTextGame
             if (plyrInput == "A")
             {
                 WriteLine("\n'You hear bellowing laughter from whom you assume is the blacksmith.\' \"HAHAHA, A wise choice indeed! Surely no foe will be able to oppose you with this by your side.\" You are handed this sword, and it seems to instantly feel like a natural extension of your body. Was this created with you in mind?");
+                
+                //creates new instance of Item class
+                Item sword = new Item();
+                sword.name = "A Hero's Sword";
+                sword.description = "It feels as though this weapon was created with you in mind. When you hold\nthis sword, it's as if you've been weilding it all your life.";
+                //adds new Item object to running Inventory List
+                Inventory.Add(sword.name);
             }
             else //if the choice B (or anything else, think of as catch also, will trigger this choice)
             {
