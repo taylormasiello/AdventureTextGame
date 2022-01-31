@@ -25,7 +25,7 @@ namespace AdventureTextGame
             "\nHuh. Maybe there was a key somewhere that you missed?\nWell what to do now? There's no way you have time to comb this whole field just for a key that likely isn't around anyway.\nRealizing that you are much taller than this barrier, you take a few steps back, and successfully bound over it.\nYou hit your tailbone on your way over, and wish you had somehow gotten lucky enough to find a key instead.",
             "\nWith your very first obstacle successfuly passed, you puff your chest out, and continue on your journey.\nIt won't be long until the bards write songs of you tales. You can hear it now,\n\"" + charName + ", the greatest Hero the land has ever seen!\"You start to see some hills off in the distance.\n----------------------------------------------\n"
         };
-            //static string[] choiceTwo = {
+            //static string[] sceneTwo = {
             //    "Description of story part two ... and the choice A or B",
             //    "... part two - what happens if A is chosen...",
             //    "... part two - what happens if B is chosen...",
@@ -34,7 +34,7 @@ namespace AdventureTextGame
             //    "... part two again - what happens if B is chosen...",
             //    "You begin to climb the stairs to the next floor...."
             //};
-            //static string[] choiceThree = {
+            //static string[] sceneThree = {
             //    "Description of story part three... and the choice A or B",
             //    "... part 3 - what happens if A is chosen...",
             //    "... part 3 - what happens if B is chosen...",
