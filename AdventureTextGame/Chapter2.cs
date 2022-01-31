@@ -157,6 +157,7 @@ namespace AdventureTextGame
 					default:
 						//default if section number does not match one of the above
 						break;
+
 				}
 
 				//let player advance when ready, then clear the screen
