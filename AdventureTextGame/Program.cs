@@ -18,6 +18,8 @@ namespace AdventureTextGame
             //Main Story
             Chapter1.choice();
 
+            Chapter2.choice();
+
             //End Screen
             EndScreen.endGame();
             

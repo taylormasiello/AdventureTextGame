@@ -16,7 +16,7 @@ namespace AdventureTextGame
             int Scenarios = 1;
             //instead of hard-coding # of scenarios, can also do a multi-dimensionally array, putting the scenarios as an array, with each element an array of the string of responses for each choice
 
-            string[] choiceOne = {
+            string[] sceneOne = {
             "\nYou notice you're walking down a tan dirt path towards an open, grassy field. Before it on your right, you spot a rather large, oddly-shaped boulder.\nYou could just keep walking, after all that rock does look strange and nothing good ever comes from such things.\nOr perhaps it would be best to investigate? Maybe there's more than meets the eye.\n(Please type either A to investigate the boulder, or B to continue onward to the field.)",
             "\nDeep inside, you know you have to find out why this rock seems so off to you. You decided to walk over to the boulder.\nUpon further inspection, you realize the boulder is made out of some dirt covered, inked and filthy parchment. This isn't a boulder at all!\nYou lift the fake rock with ease, finding a key underneath.\nYou put the rock down, and contiune onward to the field.",
             "\nYou decided to continue to the field. Let someone else bother with that boulder, you have adventure to find!\nYou laugh at yourself for thinking something so silly as a simple boulder possibly being special in some way.",
@@ -49,7 +49,7 @@ namespace AdventureTextGame
                 string input = "";
 
                 //write beginning of the scenario; ask for choice
-                WriteLine(choiceOne[0]);
+                WriteLine(sceneOne[0]);
                 WriteLine("Please enter your choice...");
 
                 //read choice and save it as input variable
@@ -58,31 +58,31 @@ namespace AdventureTextGame
                 //if choice A, print out the second element in choice array [1]
                 if (input == "A")
                 {
-                    WriteLine(choiceOne[1]);
+                    WriteLine(sceneOne[1]);
                 }
 
                 //if the choice B (or anything else, think of as catch also, will trigger this choice) prints fifth element in the array [2]
                 else
                 {
-                    WriteLine(choiceOne[2]);
+                    WriteLine(sceneOne[2]);
                 }
 
                 //next part of scenario; for both choice branches
-                WriteLine(choiceOne[3]);
+                WriteLine(sceneOne[3]);
 
                 //if choice was a, prints fifth element in the array [4]
                 if (input == "a")
                 {
-                    WriteLine(choiceOne[4]);
+                    WriteLine(sceneOne[4]);
 
                 }
                 else //if the choice B (or anything else, think of as catch also, will trigger this choice) prints sixth element in the array [5]
                 {
-                    WriteLine(choiceOne[5]);
+                    WriteLine(sceneOne[5]);
                 }
 
                 //transition to the next part of the story; same for everyone
-                WriteLine(choiceOne[6]);
+                WriteLine(sceneOne[6]);
             }
 
 
