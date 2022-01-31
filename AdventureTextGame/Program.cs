@@ -1,5 +1,5 @@
 ﻿using System;
-// using static AdventureTextGame.TitleScreen;
+using System.Collections.Generic;
 using static System.Console;
 
 
@@ -24,6 +24,8 @@ namespace AdventureTextGame
             EndScreen.endGame();
             
         }
+
+        //add utility class to real game, for formatting of text colors and things (ref, very bottom section of this page: http://programmingisfun.com/learn/c-sharp-adventure-game/c_sharp_10_content_arrays/)
     }
 }
 

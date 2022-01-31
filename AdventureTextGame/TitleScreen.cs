@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
 using static System.Console;
 
 namespace AdventureTextGame
 {
     public static class TitleScreen
     {
-        static string charName = "Hero";
+        public static string charName = "Hero";
+        public static List<string> Inventory = new List<string>();
+        //When player finds/interacts with items, can be added to this List as running inventory; will be displayed on end screen
 
         public static void gameStart()
         {

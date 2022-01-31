@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
+using static AdventureTextGame.TitleScreen;
 
 namespace AdventureTextGame
 {
@@ -80,6 +78,7 @@ namespace AdventureTextGame
 						if (input == "A")
 						{
 							WriteLine(sceneOne[4]);
+							Inventory.Add("roasted rodent dinner");
 
 						}
 						else

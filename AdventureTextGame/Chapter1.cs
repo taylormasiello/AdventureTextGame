@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
+using static AdventureTextGame.TitleScreen;
 
 namespace AdventureTextGame
 {
@@ -18,12 +16,12 @@ namespace AdventureTextGame
 
             string[] sceneOne = {
             "\nYou notice you're walking down a tan dirt path towards an open, grassy field. Before it on your right, you spot a rather large, oddly-shaped boulder.\nYou could just keep walking, after all that rock does look strange and nothing good ever comes from such things.\nOr perhaps it would be best to investigate? Maybe there's more than meets the eye.\n(Please type either A to investigate the boulder, or B to continue onward to the field.)",
-            "\nDeep inside, you know you have to find out why this rock seems so off to you. You decided to walk over to the boulder.\nUpon further inspection, you realize the boulder is made out of some dirt covered, inked and filthy parchment. This isn't a boulder at all!\nYou lift the fake rock with ease, finding a key underneath.\nYou put the rock down, and contiune onward to the field.",
+            "\nDeep inside, you know you have to find out why this rock seems so off to you. You decided to walk over to the boulder.\nUpon further inspection, you realize the boulder is made out of some dirt covered, inked and filthy parchment. This isn't a boulder at all!\nYou lift the fake rock with ease, finding a key underneath.\nYou put both the key and the fake rock in your pocket, maybe it'll come in handy later?\nYou contiune onward to the field.",
             "\nYou decided to continue to the field. Let someone else bother with that boulder, you have adventure to find!\nYou laugh at yourself for thinking something so silly as a simple boulder possibly being special in some way.",
             "\nYou eventurally come upon a small, wooden fence with a gate door. The fence seems to stretch for a great distance in both directions.\nYou try to open the gated door, but it's locked.",
             "\nWelp, a locked gate door and a key from under a fake boulder not that far from each other. What are the chances?\nYou try the key in the lock, and success! Your attention to detail has allowed you to pass the barrier with ease.",
             "\nHuh. Maybe there was a key somewhere that you missed?\nWell what to do now? There's no way you have time to comb this whole field just for a key that likely isn't around anyway.\nRealizing that you are much taller than this barrier, you take a few steps back, and successfully bound over it.\nYou hit your tailbone on your way over, and wish you had somehow gotten lucky enough to find a key instead.",
-            "\nWith your very first obstacle successfuly passed, you puff your chest out, and continue on your journey.\nYou start to see some hills off in the distance."
+            "\nWith your very first obstacle successfuly passed, you puff your chest out, and continue on your journey.\nIt won't be long until the bards write songs of you tales. You can hear it now,\n\"" + charName + ", the greatest Hero the land has ever seen!\"You start to see some hills off in the distance."
         };
             //static string[] choiceTwo = {
             //    "Description of story part two ... and the choice A or B",
@@ -59,6 +57,8 @@ namespace AdventureTextGame
                 if (input == "A")
                 {
                     WriteLine(sceneOne[1]);
+                    Inventory.Add("fake rock");
+                    Inventory.Add("short fence gate key");
                 }
 
                 //if the choice B (or anything else, think of as catch also, will trigger this choice) prints fifth element in the array [2]
