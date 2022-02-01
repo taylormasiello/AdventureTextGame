@@ -18,7 +18,7 @@ namespace AdventureTextGame
 			"You look around, but the area is bare. The field has nothing more than random insects. It's not the first\nnight you've gone to sleep without a meal, but you certainly wish you'd have grabbed some rations\nbefore heading out on your journey.",
 			"You go to sleep, prepared to wake up well rested, ready to take on the next leg of your journey.\n----------------------------------------------\n"
 		};
-        static string[] sceneTwo = {
+        static string[] encounterTwo = {
             //"Description of story/encounter, setup happens here, AND question asked",
 			"You see code piece ahead or whatever, Code piece and player interact and stuff; that piece's question is asked; player will be asked to answer here as well",
             //"... dialouge if answered correctly",
@@ -27,10 +27,10 @@ namespace AdventureTextGame
 			"code piece and player interact, code piece acknowledges that player was wrong",
             //"....something story related happens TO BOTH BRANCHES",
 			"something interaction based between code and player interact",
-            //"... dialouge if answered correctly AND PIECE WILL BE ABSORBED; ADDED TO RUNNING COUNT, NEEDED TO WIN GAME",
-			"Code piece and player interact, stuff happens, code absorbed",
+            //"... dialouge if answered correctly AND PIECE WILL BE ABSORBED; ADDED TO RUNNING COUNT, Random Loot dropped",
+			"Code piece and player interact, stuff happens, code absorbed, random loot dropped",
             //"... dialouge if answered incorrectly AND PIECE WILL NOT BE ABSORBED; Include "scroll" dropped (learning) for palyer",
-			"Code piece and player interact, stuff happens, code maybe laughs haha (can added personality and flaw to scenes as you wish, include \"scroll\" or w/e that gives hint/info to player about what question",
+			"Code piece and player interact, stuff happens, code maybe laughs haha (can added personality and flaw to encounters as you wish, include \"scroll\" or w/e that gives hint/info/correct answer to player about that question",
             //"transitional diaglouge to next scene/encounter...."
 			"stuff happens and explains where main function/player is going next, leads into next encounter intro maybe",
         };
@@ -66,11 +66,14 @@ namespace AdventureTextGame
 
 						Write("Enter your choice: ");
 						input = ReadLine();
-						input = input.ToUpper();
+						input = input.ToLower();
 						Console.ResetColor();
 
 						//3) if A, print the next part of the array, otherwise skip next and print 3rd
-						if (input == "A")
+
+						if (input == "a")
+						//** instead of "A", conditional will be: if (input == "whateverCorrectAnswer")
+						//** for example: if (input == "variable")
 						{
 							WriteLine(sceneOne[1]);
 
@@ -84,7 +87,7 @@ namespace AdventureTextGame
 						WriteLine(sceneOne[3]);
 
 						//5) if A, print next, otherwise skip ahead
-						if (input == "A")
+						if (input == "a")
 						{
 							WriteLine(sceneOne[4]);
 							Inventory.Add("roasted rodent dinner");

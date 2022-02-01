@@ -18,7 +18,7 @@ namespace AdventureTextGame
 
             WriteLine("A Brave Hero's Adventure");
             WriteLine("----------------------------------------------");
-            WriteLine("Here in the Land of Heros, capitlization and spelling is very important. \nOtherwise, it might be difficult to naviagte the journey.");
+            WriteLine("Here in the Land of Heros, spelling is very important. \nOtherwise, it might be difficult to naviagte the journey.");
             WriteLine("----------------------------------------------");
             WriteLine("Finally, the hero we've been waiting for, with courage enough to embark on this great journey. Huzzah! \n(Press any key to continue)");
             ReadKey();
