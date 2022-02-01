@@ -29,8 +29,8 @@ namespace AdventureTextGame
 			"something interaction based between code and player interact",
             //"... dialouge if answered correctly AND PIECE WILL BE ABSORBED; ADDED TO RUNNING COUNT, NEEDED TO WIN GAME",
 			"Code piece and player interact, stuff happens, code absorbed",
-            //"... dialouge if answered incorrectly AND PIECE WILL NOT BE ABSORBED; NOT ADDED TO RUNNING COUNT",
-			"Code piece and player interact, stuff happens, code maybe laughs haha (can added personality and flaw to scenes as you wish",
+            //"... dialouge if answered incorrectly AND PIECE WILL NOT BE ABSORBED; Include "scroll" dropped (learning) for palyer",
+			"Code piece and player interact, stuff happens, code maybe laughs haha (can added personality and flaw to scenes as you wish, include \"scroll\" or w/e that gives hint/info to player about what question",
             //"transitional diaglouge to next scene/encounter...."
 			"stuff happens and explains where main function/player is going next, leads into next encounter intro maybe",
         };
