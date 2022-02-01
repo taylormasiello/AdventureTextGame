@@ -13,6 +13,7 @@ namespace AdventureTextGame
             TitleScreen.gameStart();
             TitleScreen.setCharName();
             TitleScreen.firstStoryChoice();
+            TitleScreen.firstRandItem();
             TitleScreen.lvlComplete();
 
             //Main Story

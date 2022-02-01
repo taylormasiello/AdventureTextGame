@@ -73,7 +73,7 @@ namespace AdventureTextGame
                 WriteLine(sceneOne[3]);
 
                 //if choice was a, prints fifth element in the array [4]
-                if (input == "a")
+                if (input == "A")
                 {
                     WriteLine(sceneOne[4]);
 

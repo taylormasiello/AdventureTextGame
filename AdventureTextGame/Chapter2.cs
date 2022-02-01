@@ -18,27 +18,35 @@ namespace AdventureTextGame
 			"You look around, but the area is bare. The field has nothing more than random insects. It's not the first\nnight you've gone to sleep without a meal, but you certainly wish you'd have grabbed some rations\nbefore heading out on your journey.",
 			"You go to sleep, prepared to wake up well rested, ready to take on the next leg of your journey.\n----------------------------------------------\n"
 		};
-		//static string[] sceneTwo = {
-		//	"Description of story part two ... and the choice A or B",
-		//	"... part two - what happens if A is chosen...",
-		//	"... part two - what happens if B is chosen...",
-		//	"....more story.... .",
-		//	"... part two, again - what happens if A is chosen...",
-		//	"... part two again - what happens if B is chosen...",
-		//	"You begin to climb the stairs to the next floor...."
-		//};
-		//static string[] sceneThree = {
-		//	"Description of story part three... and the choice A or B",
-		//	"... part 3 - what happens if A is chosen...",
-		//	"... part 3 - what happens if B is chosen...",
-		//	"....more story.... .",
-		//	"... part 3, again - what happens if A is chosen...",
-		//	"... part 3 again - what happens if B is chosen...",
-		//	"You begin to climb the stairs to the next floor...."
-		//};
+        static string[] sceneTwo = {
+            //"Description of story/encounter, setup happens here, AND question asked",
+			"You see code piece ahead or whatever, Code piece and player interact and stuff; that piece's question is asked; player will be asked to answer here as well",
+            //"... dialouge if answered correctly",
+			"code piece and player interact, code piece acknowledges that they're right",
+            //"... dialouge if answered incorrectly",
+			"code piece and player interact, code piece acknowledges that player was wrong",
+            //"....something story related happens TO BOTH BRANCHES",
+			"something interaction based between code and player interact",
+            //"... dialouge if answered correctly AND PIECE WILL BE ABSORBED; ADDED TO RUNNING COUNT, NEEDED TO WIN GAME",
+			"Code piece and player interact, stuff happens, code absorbed",
+            //"... dialouge if answered incorrectly AND PIECE WILL NOT BE ABSORBED; NOT ADDED TO RUNNING COUNT",
+			"Code piece and player interact, stuff happens, code maybe laughs haha (can added personality and flaw to scenes as you wish",
+            //"transitional diaglouge to next scene/encounter...."
+			"stuff happens and explains where main function/player is going next, leads into next encounter intro maybe",
+        };
+
+        //static string[] sceneThree = {
+        //	"Description of story part three... and the choice A or B",
+        //	"... part 3 - what happens if A is chosen...",
+        //	"... part 3 - what happens if B is chosen...",
+        //	"....more story.... .",
+        //	"... part 3, again - what happens if A is chosen...",
+        //	"... part 3 again - what happens if B is chosen...",
+        //	"You begin to climb the stairs to the next floor...."
+        //};
 
 
-		public static void choice()
+        public static void choice()
         {
 			Console.Title = "Chapter 2";
 
